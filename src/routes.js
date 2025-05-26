@@ -7,6 +7,13 @@ const {
 } = require("./handler");
 
 const routes = [
+  {
+    method: "GET",
+    path: "/",
+    handler: (request, h) => {
+      return h.response("Hello World");
+    },
+  },
   // 1. Menyimpan buku
   {
     method: "POST",
